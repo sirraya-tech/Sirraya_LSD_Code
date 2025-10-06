@@ -25,7 +25,7 @@
 **Result:** Real-time hallucination detection with interpretability and 5–20× speedup over sampling-based methods.
 
 <p align="center">
-  <img src="assets/architecture_diagram.png" width="90%" alt="LSD Framework Overview">
+  <img src="assets/smoothness_analysis.png" width="90%" alt="LSD Framework Overview">
 </p>
 
 ---

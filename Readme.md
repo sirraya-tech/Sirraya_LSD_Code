@@ -25,7 +25,7 @@ LSD analyzes how semantic representations evolve across the internal layers of t
 This geometric signature enables real-time hallucination detection using only a single forward pass—no external databases, no multiple samples, no computational overhead.
 
 <p align="center">
-  <img src="assets/scatter_alignment_vs_consistency.png" width="85%" alt="Semantic trajectories showing divergence between factual and hallucinated content">
+  <img src="assets/trajectory_clusters.png" width="85%" alt="Semantic trajectories showing divergence between factual and hallucinated content">
 </p>
 
 ## The Core Insight
@@ -120,7 +120,7 @@ is_hallucinated = detector.predict("The Eiffel Tower is in Berlin.")
 
 <div align="center">
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sirraya-labs/lsd/blob/main/lsd.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1VA8InoxOFqR-udiMYxQ7Glq9KgQxqcKE?usp=sharing)
 
 </div>
 
@@ -136,7 +136,7 @@ is_hallucinated = detector.predict("The Eiffel Tower is in Berlin.")
 
 <div align="center">
 
-**Developed by [Sirraya Labs](https://sirraya.com)**
+**Developed by [Sirraya Labs](https://sirraya.org)**
 
 MIT License • [LICENSE](LICENSE)
 

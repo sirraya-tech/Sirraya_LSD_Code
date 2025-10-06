@@ -151,20 +151,7 @@ datasets:
 - Alignment gain and convergence depth are strong discriminative indicators of factuality.
 - LSD operates fully model-intrinsically, requiring no external knowledge base.
 
----
 
-## Citation
-
-If you use LSD in your research, please cite:
-
-```bibtex
-@article{mir2025lsd,
-  title={The Geometry of Truth: Layer-wise Semantic Dynamics for Hallucination Detection in Large Language Models},
-  author={Amir Hameed Mir},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2025}
-}
-```
 
 ---
 

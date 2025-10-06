@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "layerwise-semantic-dynamics"
+dynamic = ["version"]
+description = "Layer-wise Semantic Dynamics for Hallucination Detection in Language Models"
+authors = [
+    {name = "Amir Hameed Mir", email = "amir@sirraya.org"},
+]
+readme = "README.md"
+license = {text = "MIT"}
+keywords = ["nlp", "hallucination-detection", "transformers", "semantic-analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=1.9.0",
+    "transformers>=4.20.0",
+    "sentence-transformers>=2.2.0",
+    "datasets>=2.0.0",
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "scikit-learn>=1.0.0",
+    "matplotlib>=3.5.0",
+    "seaborn>=0.11.0",
+    "tqdm>=4.64.0",
+    "scipy>=1.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "flake8>=4.0",
+    "pre-commit>=2.0",
+]
+docs = [
+    "sphinx>=4.0",
+    "sphinx-rtd-theme>=1.0",
+    "myst-parser>=0.18",
+]
+
+[project.urls]
+Homepage = "https://github.com/sirraya-tech/Sirraya_LSD_Code"
+Documentation = "https://sirraya-tech.github.io/Sirraya_LSD_Code"
+Repository = "https://github.com/sirraya-tech/Sirraya_LSD_Code"
+Issues = "https://github.com/sirraya-tech/Sirraya_LSD_Code/issues"
+
+[project.scripts]
+lsd-analyze = "lsd.cli:main"
+
+[tool.setuptools_scm]
+write_to = "lsd/_version.py"
